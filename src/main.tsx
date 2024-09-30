@@ -1,22 +1,25 @@
 import ReactDOM from 'react-dom';
-import React from 'react';
 import './index.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import theme from "./theme.ts";
 
 export default function App() {
   return (
-    <React.StrictMode>
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <CssBaseline enableColorScheme />
-          <Routes>
-            <Route path="/" element={}></Route>
-          </Routes>
-        </BrowserRouter>
-      </ThemeProvider>
-    </React.StrictMode>
-  )
+    <div>
+      {/* header content */}
+      <header className="text-center">
+        <h1>Welcome to BankSystem</h1>
+      </header>
+
+      {/* main file content */}
+      <main>
+        <div>
+          <p className="text-center">Please choose from the options below</p>
+          <span className="inline-flex -space-x-px bg-white shadow-sm">
+            <button className="px-4 py-1 text-sm font-medium text-gray-700 hover:bg-gray-50">Log In</button>
+          </span>
+        </div>
+      </main>
+    </div>
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
