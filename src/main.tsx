@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import './index.css'
 
 export default function App() {
@@ -22,5 +22,5 @@ export default function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App />);
