@@ -3,6 +3,7 @@ pipeline {
     // will find any available agent to perform any action (stage)
     agent any
 
+    // setting environment variables for ease of access
     environment {
         dockerHub = credentials('dockerHub') // credentials id in jenkins
         CONTAINER = "banksystem-frontend-server"
