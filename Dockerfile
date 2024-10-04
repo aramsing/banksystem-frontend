@@ -13,7 +13,7 @@ RUN npm install
 # COPY - periods(.) mean everything from the local directory (to the dockerfile location) will be copied in the work dir
 # in the image which is the second period
 # Always pair this with a docker ignore file
-COPY ..
+COPY . .
 
 # the port must be free before we use it, otherwise we make it free
 EXPOSE 5173
