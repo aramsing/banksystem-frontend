@@ -4,6 +4,12 @@ FROM node:20
 # stores all of our app data by default in the app folder, common practice
 WORKDIR /app
 
+# copies package.json to the current destination directory
+COPY package.json .
+
+# installs packages from node package manager (npm)
+RUN npm install
+
 # COPY - periods(.) mean everything from the local directory (to the dockerfile location) will be copied in the work dir
 # in the image which is the second period
 # Always pair this with a docker ignore file
