@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handleChangeUser = (event: { target: { value: SetStateAction<string>; }; }) => {
         setUsername(event.target.value);
@@ -17,16 +17,16 @@ export default function Login() {
     return (
         <>
             <div className="text-2xl text-center py-10">
-                <label>Username: </label>
+                <label className="px-1">Username: </label>
                 <input type="text" value={username} onChange={handleChangeUser} placeholder="Enter your username" />
             </div>
             <div className="text-2xl text-center">
-                <label>Password: </label>
+                <label className="px-1">Password: </label>
                 <input type="password" value={password} onChange={handleChangePass} placeholder="Enter your password" />
             </div>
 
             {/* create a profile page */}
-            <button style={{display: 'block', margin: '0 auto'}} className="text-2xl py-10" onClick={() => {navigate("/")}}>Login</button>
+            <button style={{display: 'block', margin: '0 auto'}} className="text-2xl py-10" onClick={() => {navigate("/")}}>Submit</button>
         </>
     )
 }
