@@ -4,7 +4,7 @@ export default function Home() {
     const navigate = useNavigate();
 
     return (
-        <div>
+        <>
             <header className="font-bold text-4xl py-10 text-center">
                 <h1>BankSystem</h1>
             </header>
@@ -13,9 +13,7 @@ export default function Home() {
                     <label>Login to your account: </label>
                     <button onClick={() => {navigate("/login")}}>Login</button>
                 </div>
-            </main>
-
-            
-        </div>
+            </main> 
+        </>
     );
 }

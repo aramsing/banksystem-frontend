@@ -26,7 +26,7 @@ export default function Login() {
             </div>
 
             {/* create a profile page */}
-            <button style={{display: 'block', margin: '0 auto'}} className="text-2xl py-10" onClick={() => {navigate("/")}}>Submit</button>
+            <button style={{display: 'block', margin: '0 auto'}} className="text-2xl py-10" onClick={() => {navigate("/userhome")}}>Submit</button>
         </>
     )
 }
